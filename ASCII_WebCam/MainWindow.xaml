@@ -1,0 +1,13 @@
+﻿<Window x:Class="ASCII_WebCam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ASCII WebCam" Height="407" Width="525" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="StartCapture_Button" Content="Начать получать изображение" Margin="10,65,10,0" VerticalAlignment="Top" Height="24" Click="Get_WebCamImage_Click" IsEnabled="False"/>
+        <CheckBox x:Name="IsMirrorred_CheckBox" Content="Зеркальное отображение" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="17.857"/>
+        <ComboBox x:Name="Devices_ComboBox" Margin="10,11,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" SelectionChanged="Devices_ComboBox_SelectionChanged"/>
+        <ComboBox x:Name="Resolutions_ComboBox" Margin="10,38,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="ASCII_textBox" Margin="10,117.451,10,10" TextWrapping="Wrap" FontSize="4.4" IsReadOnly="True" FontFamily="Consolas" Background="Black" Foreground="#FF056400" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
